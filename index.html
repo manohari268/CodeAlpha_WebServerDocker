@@ -1,10 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CodeAlpha Docker Project</title>
+    <title>CodeAlpha Docker Web Server</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            text-align: center;
+        }
+        .container {
+            padding: 60px 20px;
+        }
+        .card {
+            max-width: 850px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.12);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+        h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #00e5ff;
+        }
+        .badges span {
+            display: inline-block;
+            margin: 8px;
+            padding: 10px 18px;
+            border-radius: 25px;
+            background: #00c853;
+            font-weight: bold;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .box {
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255,255,255,0.15);
+        }
+        .status {
+            margin-top: 30px;
+            font-size: 22px;
+            color: #ffd700;
+        }
+        footer {
+            margin-top: 35px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello CodeAlpha!</h1>
-    <h2>Web Server using Docker</h2>
+    <div class="container">
+        <div class="card">
+            <h1> CodeAlpha DevOps Project</h1>
+            <h2>Web Server using Docker</h2>
+            <p>This project demonstrates containerization, deployment, and web server management using Docker and Nginx.</p>
+
+            <div class="badges">
+                <span>Docker</span>
+                <span>Nginx</span>
+                <span>DevOps</span>
+                <span>Containerization</span>
+            </div>
+
+            <div class="grid">
+                <div class="box">
+                    <h3>Build</h3>
+                    <p>Docker image created successfully.</p>
+                </div>
+                <div class="box">
+                    <h3>Run</h3>
+                    <p>Container deployed on port 8080.</p>
+                </div>
+                <div class="box">
+                    <h3>Server</h3>
+                    <p>Nginx serves the custom webpage.</p>
+                </div>
+                <div class="box">
+                    <h3>Status</h3>
+                    <p>Application is live locally.</p>
+                </div>
+            </div>
+
+            <div class="status"> Deployment Successful</div>
+
+            <footer>
+                Created by Manohari M | CodeAlpha Internship Task
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
